@@ -1,0 +1,259 @@
+/* Estilos generales */
+#header-user {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 1em;
+    background-color: #efefef;
+    border-right: 1px solid #ddd;
+}
+
+#header-user img {
+    border-radius: 50%;
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+    margin-left: 10px;
+    width: 60px; /* Tamaño de las imágenes de los contactos */
+    height: 60px;
+}
+
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-image: url(img/wasa5.jpg);
+    background-color: #e0e0e0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Estilo para la imagen de perfil y el encabezado */
+img {
+    width: 100px; /* Ajusta según lo que necesites */
+    height: auto;
+    border-radius: 50%; /* Imagen circular */
+}
+
+
+/* Bloque izquierdo */
+#left-block {
+    margin-left: 2.2%;
+    width: 55%;
+    background-color: #fefefe;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 925px; /* Altura fija para el bloque de chats */
+    overflow: hidden;
+}
+
+#search {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#search label {
+    margin-bottom: 5px; /* Espacio debajo de la etiqueta */
+}
+
+#search input[type="text"] {
+    width: 100%; /* Para que ocupe todo el ancho menos el padding */
+    padding: 10px;
+    border: 0px solid #ccc;
+    border-radius: 5px;
+}
+
+#search input[type="submit"] {
+    float: right;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#search input[type="submit"]:hover {
+    background-color: #0056b3; /* Color al pasar el mouse */
+}
+
+#lupa {
+    margin-left: 10px;
+}
+
+
+/* Estilo para cada chat */
+
+.chats {
+    overflow-y: auto; /* Permite desplazamiento */
+    height: auto;
+    max-height: 780px;
+}
+
+.chat {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.chat:hover {
+    background-color: #efefef;
+}
+
+.chat img {
+    width: 45px; /* Tamaño de las imágenes de los contactos */
+    height: 45px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 15px; /* Espacio entre la imagen y el texto */
+}
+
+.preview {
+    padding-right: 8px;
+    border-radius: 5px;
+    margin-left: auto;
+}
+.entrega {
+    margin-left: auto;
+}
+
+.entrega p {
+    align-items: start;
+    font-size: small;
+    margin-top: auto;
+}
+
+.fa-check {
+    font-size: 0.6em;
+    align-items: end;
+    margin-top: 60%;
+    margin-bottom: auto;
+}
+
+.checked {
+    color: #007bff;
+}
+
+/* Bloque derecho */
+#right-block {
+    margin-right: 2.2%;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 925px; /* Altura fija para el bloque de chats */
+    background-image: url(img/wasawalpape2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#chat-header {
+    display: flex;
+    align-items: center;
+    border-left: 1px solid #ddd;
+    background-color: #efefef;
+    margin-bottom: 2%;
+}
+
+#chat-header img {
+    width: 40px; /* Tamaño de las imágenes de los contactos */
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px; /* Espacio entre la imagen y el texto */
+    margin-left: 9px;
+}
+
+
+/* Estilo para los mensajes */
+.message {
+    margin-bottom: 2%;
+    margin-left: 8%;
+    padding: 5px;
+    padding-left: 1%;
+    padding-right: 3%;
+    border-radius: 5px;
+}
+
+.message p {
+    margin-left: 3%;
+    width: 100%;
+}
+
+#chat-body {
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+}
+
+.user2 {
+    background-color: #fefefe;
+    padding-right: 3%;
+    margin-right: auto;
+}
+
+.user {
+    margin-bottom: 2px;
+    margin-right: 8%;
+    background-color: #dbf7c7; /* Fondo diferente para distinguir */
+    margin-left: auto; /* Alinea este mensaje a la derecha */
+}
+
+/* Estilo para el formulario */
+
+#form2 {
+    background-color: #e7e5e3;
+    padding: 0.4em;
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+    border-top: 1px solid #ddd;
+}
+
+.input-field {
+    flex-grow: 1;
+    border: none;
+    padding: 0.6em;
+    border-radius: 6px;
+    background-color: #ffffff;
+    font-size: 16px;
+    outline: none;
+}
+
+.send-button {
+    border: none;
+    padding: 0.6em 0.6em;
+    margin-left: 0.6em;
+    margin-right: 0.5em;
+    border-radius: 100%;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.send-button:hover {
+    background-color: #22c35e;
+}
+
+.fa-face-smile {
+    font-size: 1em;
+    margin-right: 0.7em;
+    margin-left: 0.4em;
+    margin-bottom: 0.1em;
+}
+
+/* Para limpiar el flotado */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
